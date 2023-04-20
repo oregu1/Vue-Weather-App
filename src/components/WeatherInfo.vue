@@ -8,7 +8,7 @@ const props = defineProps({
     },
 });
 
-const today = new Date().toLocaleString('ru-RU', { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' })
+const today = new Date().toLocaleString('en-EN', { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' })
 </script>
 <template>
     <!-- Отрисовываем компонент если в нашем объекте props есть раздел weather -->

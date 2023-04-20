@@ -26,10 +26,10 @@ onMounted(getWeatherInfo);
 <template>
   <div class="wrapper">
     <form class="weather_search-form" @submit.prevent="getWeatherInfo">
-      <input class="weather_search-input" v-model="searchInput" type="text" placeholder="Tokyo"/>
+      <input class="weather_search-input" v-model="searchInput" type="text" placeholder="Enter a city..."/>
     </form>
     <!-- WeatherInfo - component -->
-    <WeatherInfo :resultInfo="result" /><!-- задаем props -->
+    <WeatherInfo :resultInfo="result" /><!-- задаем props с названием resultInfo и в него передаем объект с данными result как значение. т.е. resultInfo - это ключ, а result - значение-->
   </div>
 </template>
 
